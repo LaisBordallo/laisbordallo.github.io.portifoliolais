@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+// styles.scss
+
+// Importando Bootstrap via CDN
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css');
+
+// Importando Owl Carousel via CDN
+@import url('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css');
+
+
+
+// Seus estilos personalizados
