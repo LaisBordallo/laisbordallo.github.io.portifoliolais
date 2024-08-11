@@ -18,19 +18,19 @@ export class CarrosselComponent {
   // Array de depoimentos
   testimonials: Testimonial[] = [
     {
-      image: 'assets/images/carousel1.png' // Caminho para a imagem
+      image: 'assets/images/carousel1.png' 
     },
     {
-      image: 'assets/images/carousel2.png' // Caminho para a imagem
+      image: 'assets/images/carousel2.png' 
     },
     {
-      image: 'assets/images/carousel3.png' // Caminho para a imagem
+      image: 'assets/images/carousel3.png' 
     },
     {
-      image: 'assets/images/carousel4.png' // Caminho para a imagem
+      image: 'assets/images/carousel4.png' 
     },
     {
-      image: 'assets/images/carousel5.png' // Caminho para a imagem
+      image: 'assets/images/carousel5.png' 
     }
   ];
   
@@ -38,20 +38,20 @@ export class CarrosselComponent {
   customOptions: OwlOptions = {
     loop: true,
     margin: 10,
-    nav: false, // Desativa os botões de navegação padrão
-    dots: true, // Ativa os pontos de navegação
-    center: true, // Centraliza o item ativo
+    nav: false,
+    dots: true, 
+    center: true, 
     autoplay: true,
     autoplayTimeout: 3000,
     responsive: {
       0: {
-        items: 1 // Exibe um item em telas pequenas
+        items: 1 
       },
       600: {
-        items: 3 // Exibe três itens em telas maiores
+        items: 3 
       },
       1000: {
-        items: 3 // Exibe três itens em telas grandes
+        items: 3 
       }
     }
   };
