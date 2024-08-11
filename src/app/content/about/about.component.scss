@@ -1,96 +1,58 @@
-/* about.component.scss */
-
-.about-container {
-    display: flex;
-    background-color: black;
-    z-index: -1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 20px;
-    margin: 10 auto;
-    word-wrap: break-word;
-    overflow: auto;
-    text-overflow: ellipsis;
-    padding: 20px;
-
-    @media (max-width: 800px) {
-        .container {
-            font-size: 0.8rem;
-        }
-    }
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.title-container {
-    text-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: white;
-    gap: 20px;
-    word-wrap: break-word;
-    overflow: hidden;
+.about-mf .about-img {
+  margin-bottom: 2rem;
 }
 
-.description-container {
-    display: block;
-    max-width: 800px; 
-    margin: 0 auto; /* Centraliza o container */
-    padding: 20px;
-    background-color: #333; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(97, 88, 88, 0.1); /* Sombra suave para destaque */
-    color: #ffffff; 
-    font-size: 16px;
-    line-height: 1.6; /* Melhor espaçamento entre linhas */
-    text-align: left; /* Alinha o texto à esquerda para melhor leitura */
-  }
-  
-  .description-container p {
-    margin-bottom: 20px; /* Espaçamento entre parágrafos */
-  }
-  
-  .description-container p:last-child {
-    margin-bottom: 0; /* Remove margem inferior do último parágrafo */
-  }
-
-.image-container {
-    width: 100%;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 24px;
+.about-mf .about-img img {
+  margin-left: 10px;
 }
 
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Garante que a imagem preencha o contêiner de forma adequada */
-  }
+.skill-mf span {
+  color: #4e4e4e;
+}
 
+.skill-mf .progress {
+  background-color: #bbf5df;
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #24b67e;
+}
+
+/* Contêiner dos Botões */
 .btn-container {
-    display: flex;
-    gap: 20px; /* Espaçamento entre os botões */
-  }
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-
-.about-btn:hover {
-    background-color: #0056b3;
+  background-color: #fff;
+  color: #24b67e;
+  border-radius: 0;
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: flex; /* Usa Flexbox para distribuir os botões */
+  gap: 1rem; /* Espaço entre os botões */
 }
 
+/* Estilo dos Botões Primários */
+.btn-container .btn-primary {
+  background-color: #24b67e;
+  color: #fff;
+  border-color: #24b67e;
+  border-radius: 0; /* Certifique-se de que todos os botões têm a borda arredondada igual */
+  padding: .5rem 1.5rem; /* Espaçamento interno do botão */
+  font-size: 1rem; /* Tamanho da fonte do botão */
+  flex: 1; /* Faz os botões ocuparem o espaço disponível igualmente */
+}
+
+/* Caso tenha outros estilos específicos para outros botões */
+.btn-container .btn-secondary {
+  background-color: #e0e0e0;
+  color: #24b67e;
+  border-color: #e0e0e0;
+}

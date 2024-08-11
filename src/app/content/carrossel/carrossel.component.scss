@@ -1,3 +1,19 @@
+.owl-carousel {
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens dentro do carrossel */
+}
+
+.owl-stage {
+  display: flex;
+  flex-direction: row; /* Garante que os itens sejam alinhados horizontalmente */
+}
+
+.owl-item {
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens do carrossel */
+  justify-content: center; /* Centraliza o conteúdo dentro de cada item */
+}
+
 .testimonial {
   display: flex;
   flex-direction: column;
@@ -9,6 +25,7 @@
   transition: transform 0.3s;
   max-width: 300px; /* Ajuste conforme necessário */
   margin: auto; /* Centraliza o conteúdo */
+  text-align: center;
 }
 
 .owl-carousel .owl-item.center .testimonial {
@@ -57,7 +74,7 @@
   margin: 5px;
   background: #ccc;
   border-radius: 5px; /* Barras retangulares com bordas arredondadas */
-  transition: background 0.3s;
+  transition: background-color 0.3s;
 }
 
 .owl-dot.active {
