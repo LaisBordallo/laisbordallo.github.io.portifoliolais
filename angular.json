@@ -109,7 +109,7 @@
               "node_modules/ngx-owl-carousel-o/dist/assets/owl.theme.default.min.css"             
             ],
             "scripts": [
-              "src/assets/js/jquery.min.js",
+              "src/assets/js/jquery.min.js",              
               "src/assets/js/popper.min.js",
               "src/assets/js/bootstrap.min.js",
               "src/assets/js/owl.carousel.min.js",
@@ -117,7 +117,8 @@
               "src/assets/js/typed.min.js",
               "src/assets/js/jquery.easing.min.js",
               "src/assets/js/jquery.counterup.min.js",
-              "src/assets/js/custom.js"
+              "src/assets/js/custom.js",
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           }
         }
