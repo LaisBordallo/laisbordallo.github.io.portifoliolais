@@ -1,7 +1,26 @@
-.owl-stage {
+.owl-carousel-o {
+  /* Garante que o contêiner ocupe a largura total do seu elemento pai */
+  width: 100%;
+  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a largura do contêiner */
   display: flex;
-  flex-direction: row; /* Certifique-se de que os itens estejam alinhados horizontalmente */
+  flex-direction: row; /* Alinha os itens horizontalmente */ 
 }
+/* CSS para os itens do carrossel */
+.owl-carousel-o .owl-item {  /* Garante que os itens são exibidos em linha e não quebram em uma nova linha */
+  display: flex;
+  width: auto; /* Permite que o item tenha largura automática */  
+  flex-shrink: 0; /* Garante que o item não encolha */
+}
+
+.owl-carousel-o .owl-stage {
+  display: flex; /* Alinha os itens horizontalmente */
+  flex-wrap: nowrap; /* Garante que os itens não quebrem em uma nova linha */
+}
+
+.owl-carousel-o .owl-stage-outer {
+  overflow: hidden; /* Evita que o conteúdo ultrapasse o contêiner */
+}
+
 .testimonial {
   display: flex;
   flex-direction: column;
@@ -35,18 +54,6 @@
 .testimonial h3 {
   margin: 10px 0 5px;
   font-size: 1.2em;
-}
-
-.testimonial p {
-  font-size: 1em;
-  color: #555;
-  margin: 5px 0 10px;
-  text-align: center;
-}
-
-.testimonial small {
-  font-size: 0.9em;
-  color: #888;
 }
 
 /* Estilos para os pontos de navegação */
