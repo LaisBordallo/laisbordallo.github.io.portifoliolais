@@ -17,10 +17,8 @@ interface Testimonial {
   templateUrl: './carrossel.component.html',
   styleUrls: ['./carrossel.component.scss']
 })
-export class CarrosselComponent implements AfterViewInit {
-  ngAfterViewInit(): void {
-    throw new Error('Method not implemented.');
-  }
+export class CarrosselComponent {
+
   // Array de depoimentos
   testimonials: Testimonial[] = [
     {
@@ -57,20 +55,22 @@ export class CarrosselComponent implements AfterViewInit {
   
 
   customOptions: OwlOptions = {
-    loop: true,
+    loop: false,
     margin: 10,
     nav: false, // Desativa os botões de navegão padrão
     dots: true, // Ativa os pontos de vegação
     center: true, // Centraliza o iteativo
     autoplay: true,
-    autoplayTimeout: 30,
+    autoplayTimeout: 5000,
     autoplayHoverPause: true, // Pausa o autoplay ao passar o mous       
+    rtl: true, // Inverte a direção do carrossel
+    items: 3, // Exibe três itens por vez
     responsive: {
     0: {
       items: 1 // Exibe um item em telas pequenas
     },
     600: {
-      items: 3 // Exibe três itens em telas maiores
+      items: 2 // Exibe três itens em telas maiores
     },
     1000: {        
       items: 3 // Exibe três itens em telas grandes

@@ -9,7 +9,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet,IntroductionComponent, CarrosselComponent, AboutComponent, PortfolioComponent, FooterComponent],
+  imports: [RouterOutlet, IntroductionComponent, CarrosselComponent, AboutComponent, PortfolioComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

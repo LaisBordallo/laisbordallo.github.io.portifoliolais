@@ -1,18 +1,9 @@
-.owl-carousel {
-  display: flex;
-  align-items: center; /* Alinha verticalmente os itens dentro do carrossel */
-}
-
 .owl-stage {
   display: flex;
-  flex-direction: row; /* Garante que os itens sejam alinhados horizontalmente */
+  flex-direction: row; /* Certifique-se de que os itens estejam alinhados horizontalmente */
 }
 
-.owl-item {
-  display: flex;
-  align-items: center; /* Alinha verticalmente os itens do carrossel */
-  justify-content: center; /* Centraliza o conteúdo dentro de cada item */
-}
+
 
 .testimonial {
   display: flex;
@@ -28,11 +19,11 @@
   text-align: center;
 }
 
-.owl-carousel .owl-item.center .testimonial {
+.owl-carousel-o .owl-item.center .testimonial {
   transform: scale(1.2); /* Aumenta o item central */
 }
 
-.owl-carousel .owl-item.active:not(.center) .testimonial {
+.owl-carousel-o .owl-item.active:not(.center) .testimonial {
   opacity: 0.7; /* Deixa os itens laterais um pouco transparentes */
 }
 
