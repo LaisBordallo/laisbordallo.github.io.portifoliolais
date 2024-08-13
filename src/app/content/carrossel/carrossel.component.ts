@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
+
 // Interface para definir a estrutura do depoimento
 interface Testimonial {
   name: string;
@@ -54,25 +55,37 @@ export class CarrosselComponent {
   
 
   customOptions: OwlOptions = {
-    loop: false,
+    loop: true,
     margin: 10,
-    nav: false, // Desativa os botões de navegação padrão
-    dots: true, // Ativa os pontos de navegação
-    center: true, // Centraliza o item ativo
+    nav: false, 
+    dots: true, 
+    center: true,
     autoplay: true,
     autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    animateOut: 'fadeOut', // Animação ao sair
+    animateIn: 'fadeIn', // Animação ao entrar
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    items: 1,
+    stagePadding: 50,
+    smartSpeed: 450, // Velocidade da animação
+    slideTransition: 'linear', // Transição linear
+
     responsive: {
       0: {
-        items: 1 // Exibe um item em telas pequenas
+        items: 1 
       },
       600: {
-        items: 3 // Exibe três itens em telas maiores
+        items: 3 
       },
       1000: {
-        items: 3 // Exibe três itens em telas grandes
+        items: 5 
       }
     }
-  };
-  
+
+  };  
+
   
 }

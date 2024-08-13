@@ -106,7 +106,8 @@
               "src/assets/css/ionicons.min.css",
               "src/assets/css/lightbox.min.css",
               "src/assets/css/font-awesome.min.css",                 
-              "src/app/styles.scss"    
+              "src/app/styles.scss",
+              "src/assets/css/style.css"    
             ],
             "scripts": [
              "node_modules/jquery/dist/jquery.min.js",
