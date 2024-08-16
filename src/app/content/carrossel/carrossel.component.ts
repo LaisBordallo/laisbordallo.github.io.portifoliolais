@@ -4,12 +4,10 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 
-// Interface para definir a estrutura do depoimento
+// Interface para definir a estrutura do carrossel de tecnologias
 interface Testimonial {
   name: string;
-  message: string;
-  position: string;
-  image: string; // Novo campo para a imagem
+  image: string;
 }
 
 @Component({
@@ -27,61 +25,103 @@ interface Testimonial {
   ]
 })
 export class CarrosselComponent {
-  // Array de depoimentos
+  // Array de tecnologias
   testimonials: Testimonial[] = [
     {
-      name: 'João Silva',
-      message: 'Esse serviço foi incrível, realmente superou minhas expectativas!',
-      position: 'CEO da Empresa A',
-      image: 'assets/images/carousel1.png' // Caminho para a imagem
-    },
-    {
-      name: 'Maria Oliveira',
-      message: 'A qualidade do atendimento é excepcional, recomendo a todos!',
-      position: 'Gerente de Marketing da Empresa B',
-      image: 'assets/images/carousel2.png' // Caminho para a imagem
-    },
-    {
-      name: 'Carlos Souza',
-      message: 'A experiência foi muito boa, sem dúvidas voltarei a utilizar.',
-      position: 'Desenvolvedor na Empresa C',
-      image: 'assets/images/carousel3.png' // Caminho para a imagem
-    },
-    {
-      name: 'Carlos Souza',
-      message: 'A experiência foi muito boa, sem dúvidas voltarei a utilizar.',
-      position: 'Desenvolvedor na Empresa C',
-      image: 'assets/images/carousel4.png' // Caminho para a imagem
-    },
-    {
-      name: 'Carlos Souza',
-      message: 'A experiência foi muito boa, sem dúvidas voltarei a utilizar.',
-      position: 'Desenvolvedor na Empresa C',
-      image: 'assets/images/carousel5.png' // Caminho para a imagem
+      name: 'JavaScript',
+      image: 'assets/images/javascript.svg'
     }
-  ];
-  
+    ,
+    {
+      name: 'Typescript',
+      image: 'assets/images/typescript.svg'
+    }
+    ,
+    {
+      name: 'HTML',
+      image: 'assets/images/html.svg'
+    }
+    ,
+    {
+      name: 'CSS',
+      image: 'assets/images/css.svg'
+    }
+    ,
+    {
+      name: 'Angular',
+      image: 'assets/images/angular.svg'
+    }
+    ,
+    {
+      name: 'VS Code',
+      image: 'assets/images/vscode.svg'
+    }
+    ,
+    { name: 'Github',
+      image: 'assets/images/github.svg'
+    },
+    { name: 'Git',
+      image: 'assets/images/git.svg'
+    }
+    ,
+    { name: 'Bootstrap',
+      image: 'assets/images/bootstrap.svg'
+    }
+    ,
+    { name: 'Figma',
+      image: 'assets/images/figma.svg'
+    }
+    ,
+    { name: 'Google Cloud',
+      image: 'assets/images/googlecloud.svg'
+    }
+    ,
+    { name: 'JQuery',
+      image: 'assets/images/jquery.svg'
+    }
+    ,
+    { name: 'Kotlin',
+      image: 'assets/images/kotlin.svg'
+    }
+    ,
+    { name: 'My SQL',
+      image: 'assets/images/mysql.svg'
+    }
+    ,
+    { name: 'NodeJS',
+      image: 'assets/images/nodejs.svg'
+    }
+    ,
+    { name: 'NPM',
+      image: 'assets/images/npm.svg'
+    }
+    ,
+    { name: 'Android',
+      image: 'assets/images/android.svg'
+    }
+    
+  ];  
 
   customOptions: OwlOptions = {
     loop: true,
-    margin: 10,
+    margin: 5,
     dots: false, 
     center: true,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
-    animateOut: 'fadeOut', // Animação ao sair
-    animateIn: 'fadeIn', // Animação ao entrar
-    mouseDrag: false,
-    touchDrag: false,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    mouseDrag: true,
+    touchDrag: true,
     pullDrag: false,
-    navSpeed: 1000, // Velocidade da navegação
+    navSpeed: 1000,
     navText: ['PREV', 'NEXT'],
-    nav: true,
+    nav: false,
     items: 1,
     stagePadding: 15,
-    smartSpeed: 700, // Velocidade da animação
-    slideTransition: 'linear', // Transição linear
+    smartSpeed: 900,
+    slideTransition: 'linear',
 
     responsive: {
       0: {
@@ -91,7 +131,7 @@ export class CarrosselComponent {
         items: 3 
       },
       1000: {
-        items: 5 
+        items: 7 
       }
     }
 

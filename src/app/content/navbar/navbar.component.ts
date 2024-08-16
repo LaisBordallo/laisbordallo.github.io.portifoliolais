@@ -15,6 +15,7 @@ import { NavbarService } from '../../services/navbar.services';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+[x: string]: any;
   constructor(private navbarService: NavbarService, private router: Router) {}
 
   navegarPara(path: string, event: Event) {

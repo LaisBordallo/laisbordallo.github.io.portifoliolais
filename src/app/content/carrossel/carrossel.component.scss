@@ -1,36 +1,66 @@
-.owl-carousel-o {
-  width: 100%;
-  overflow: hidden; 
-  display: flex;
-  flex-direction: row;
-  padding: 4rem 4rem 0 4rem;
-  margin-top: 3rem;    
+/* Estilo para o título da seção */
+.title-box-2 {
   text-align: center;
-  position: relative;
-
+  padding: 1px; 
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  position: relative; 
+  z-index: 1; 
 }
-/* CSS para os itens do carrossel */
-.owl-carousel-o .owl-item {  
+
+.line-mf {
+  width: 50px;
+  height: 3px;
+  background-color: #26D0CE; 
+  margin: 0 auto 2rem auto;
+  position: relative;
+  z-index: 2; 
+}
+
+/* Ajusta o tamanho dos itens do carrossel */
+.slick-slide {
   display: flex;
-  width: auto;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  width: 20%; /* Ajuste a largura conforme necessário */
   flex-shrink: 0; 
   justify-content: center;
   align-items: center;
-  padding: 15px;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  border: 1px solid #333;
 }
 
-.owl-carousel .owl-item.active {
-  transform: scale(1.05); /* Aumenta o item ativo */
+.slick-slide img {
+  width: 100%; /* Ajusta a largura da imagem para preencher o contêiner do item */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Ajusta o tamanho da imagem para preencher o contêiner */
 }
 
-.owl-carousel-o .owl-stage {
-  display: flex; 
-  flex-wrap: nowrap;
+/* Ajusta o título */
+.slick-slide h3 {
+  position: absolute; /* Permite que o título seja posicionado sobre a imagem */
+  bottom: 10px; /* Ajusta a distância do título do fundo do item */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta o alinhamento horizontal */
+  color: #333; /* Cor do título */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
+  padding: 5px 10px; /* Padding para garantir espaço ao redor do texto */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+  width: auto; /* Permite que a largura do título se ajuste ao conteúdo */
+  max-width: 90%; /* Evita que o título ultrapasse a largura do item */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  font-weight: 600; /* Ajuste para dar mais destaque ao título */
+  margin-bottom: 1px;
+  display: inline-block;
 }
 
-.owl-carousel-o .owl-stage-outer {
-  overflow: hidden; 
+/* Ajusta a largura do contêiner do carrossel */
+.slick-track {
+  display: flex;
+  align-items: center; /* Centraliza os itens verticalmente, se necessário */
 }
 
 /* Adiciona um efeito de hover nos itens */
@@ -43,38 +73,21 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #333;
   border-radius: 8px;
-  background-color: #f9f9f9;
   transition: transform 0.3s;
-  max-width: 300px; /* Ajuste conforme necessário */
+  max-width: 150px; /* Ajuste conforme necessário */
+  max-height: 2000px;
   margin: auto; /* Centraliza o conteúdo */
   text-align: center;
 }
 
 .owl-carousel .owl-item .testimonial {
-  background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease-in-out;
-}
-
-.owl-carousel-o .owl-item.center .testimonial {
-  transform: scale(1.2); /* Aumenta o item central */
-}
-
-.owl-carousel-o .owl-item.active:not(.center) .testimonial {
-  opacity: 0.7; /* Deixa os itens laterais um pouco transparentes */
-}
-
-.testimonial-image {
-  width: 150px; /* Ajuste o tamanho conforme necessário */
-  height: 150px; /* Ajuste o tamanho conforme necessário */
-  border-radius: 50%; /* Torna a imagem circular */
-  margin-bottom: 15px;
-  object-fit: cover; /* Garante que a imagem se ajuste ao container */
 }
 
 .testimonial h3 {
@@ -123,7 +136,7 @@
 
 .owl-nav button.owl-prev:hover,
 .owl-nav button.owl-next:hover {
-  color: #24b67e;
+  color: #26D0CE;
 }
 
 /* Animação personalizada para o fade in */
@@ -164,38 +177,6 @@
 .owl-carousel .owl-stage {
   transition: transform 0.5s ease-in-out;
   animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-/* Animação de entrada aos itens */
-.owl-carousel .owl-item .fadeIn {
-  animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-/* Animação de saída aos itens */
-.owl-carousel .owl-item .fadeOut {
-  animation: fadeOut 0.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateX(30px);
-  }
 }
 
 @media (max-width: 767.98px) {

@@ -16,6 +16,7 @@
   align-items: center; /* Centraliza o conteúdo horizontalmente */
 }
 
+
 /* Estilo para o título */
 .title-box-2 {
   text-align: center; /* Centraliza o título */
@@ -24,8 +25,10 @@
 .line-mf {
   width: 50px;
   height: 3px;
-  background-color: #24b67e;
+  background-color: #26D0CE; 
   margin: 0 auto 2rem auto;
+  position: relative;
+  z-index: 2; 
 }
 
 /* Estilo para o título das habilidades */
@@ -68,13 +71,13 @@
 }
 
 .button:hover {
-  background-color: #0d9963;
+  background-color: #26D0CE;
   color: #fff;
   text-decoration: none;
 }
 
 .button-a {
-  background-color: #24b67e;
+  background-color: #26D0CE;
   color: #fff;
   border-color: #bbf5df;
 }
@@ -98,7 +101,7 @@
 }
 
 .description-container p {
-  color: #555;
+  color: #333;
   font-size: responsive-font; /* Usa a variável de fonte responsiva */
 }
 

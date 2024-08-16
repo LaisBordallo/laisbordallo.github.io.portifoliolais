@@ -3,7 +3,7 @@
   position: relative;
   padding: 4rem 0;
   background: #333 center / cover no-repeat;
-  color: #333;
+  color: #fff;
 }
 
 .footer-paralax .overlay-mf {
@@ -16,11 +16,16 @@
   z-index: 1;
 }
 
+.lead {
+  color: #333;
+}
+
 /* Container */
 .container {
   position: relative;
   z-index: 2;
   background-color: #fff;
+  margin-top: 2rem;
 }
 
 /* Box */
@@ -53,7 +58,7 @@
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #333;
+  background-color: #26D0CE;
   width: 100px;
   bottom: -12px;
 }
@@ -78,7 +83,7 @@
 }
 
 .contactForm .form-control:focus {
-  border-color: #24b67e;
+  border-color: #26D0CE;
 }
 
 .contactForm .form-group {
@@ -86,7 +91,7 @@
 }
 
 .contactForm button {
-  background-color: #24b67e;
+  background-color: #26D0CE;
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -97,19 +102,24 @@
 }
 
 .contactForm button:hover {
-  background-color: #1a8a5a;
-}
-
-.more-info {
-  margin-top: 2rem;
-}
-
-.more-info .lead {
-  font-size: 1rem;
-  color: #333;
+  background-color: #26D0CE; /* Ajustado para um tom mais escuro no hover */
 }
 
 /* Socials */
+.more-info {
+  padding: 2rem 0;  
+}
+
+.more-info .list-ico{
+  color: #333;
+  text-align: center;
+  padding: 2rem 0 0;
+}
+
+::marker {
+  color: #ffffff00;
+}
+
 .social-links {
   list-style: none;
   padding: 0;
@@ -123,91 +133,103 @@
 }
 
 .ico-circle {
-  background: #ffffff00;
+  background: #fff; /* Cor de fundo do círculo, se necessário */
   border-radius: 50%;
   padding: 10px;
-  color: white;
-  display: inline-block;
+  color: #333; /* Cor desejada para o ícone */
+  display: flex; /* Use flexbox para centralizar o ícone */
+  align-items: center; /* Alinha verticalmente no centro */
+  justify-content: center; /* Alinha horizontalmente no centro */
+  height: 40px; 
+  width: 40px;
+  font-size: 20px; 
+  text-align: center;
+  transition: all 0.3s;
 }
 
 .ico-circle i {
-  font-size: 20px;
+  font-size: 30px;
+  color: #333;
+  margin: 0 auto;
 }
 
-
 .socials {
+  text-align: center; /* Centraliza os ícones */
   padding: 1.5rem 0;
 }
 
 .socials ul {
-  list-style: none;
+  list-style: none; /* Remove o marcador dos itens da lista */
   padding: 0;
-  margin: 1rem 0;
+  margin: 0;
+  display: flex; /* Usa flexbox para alinhar os ícones */
+  justify-content: center; /* Alinha os itens no centro */
+  gap: 10px; /* Espaçamento entre os ícones */
 }
 
 .socials ul li {
   display: inline-block;
-  margin: 0 0.5rem;
 }
 
 .socials ul li a {
   color: #333;
   font-size: 1.5rem;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .socials ul li a:hover {
-  color: #24b67e;
-}
-
-.socials .ico-circle,
-.ico-circle {
-  height: 100px;
-  width: 100px;
-  font-size: 2rem;
-  border-radius: 50%;
-  line-height: 1.55;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 0 0 10px #a200ff;
-  display: block;
+  color: #26D0CE;
 }
 
 .socials .ico-circle {
-  height: 40px;
-  width: 40px;
+  height: 40px; /* Ajustado para a consistência com os outros ícones */
+  width: 40px; /* Ajustado para a consistência com os outros ícones */
   font-size: 1.7rem;
-  margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #a200ff;
-  transition: all 500ms ease;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 3px #26D0CE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socials .ico-circle:hover {
-  background-color: #a200ff;
+  background-color: #26D0CE;
   color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
+  box-shadow: 0 0 0 3px #333;
   transition: all 500ms ease;
 }
 
-
+/* Footer */
 /* Footer */
 .footer {
+  background: #fff;
+  color: #333; /* Cor padrão para o texto do footer */
   padding: 2rem 0;
-  background: #333;
-  color: #fff;
   text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: inherit; /* Herda a cor do footer */
 }
 
 .footer .copyright {
   margin-bottom: 0.5rem;
+  color: inherit; /* Herda a cor do footer */
 }
 
 .footer .credits {
   margin-bottom: 0;
+  color: inherit; /* Herda a cor do footer */
 }
 
 .footer .credits a {
-  color: #24b67e;
+  color: #26D0CE; /* Cor dos links nos créditos */
   text-decoration: none;
 }
 
@@ -226,7 +248,7 @@
   position: fixed;
   width: 42px;
   height: 42px;
-  background-color: #a200ff;
+  background-color: #26D0CE;
   opacity: .7;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -242,7 +264,7 @@
 .back-to-top {
   position: fixed;
   display: none;
-  background: #24b67e;
+  background: #26D0CE;
   color: #fff;
   border-radius: 50%;
   width: 3rem;
@@ -258,7 +280,7 @@
 }
 
 .back-to-top:hover {
-  background-color: #1a8a5a;
+  background-color: #333;
 }
 
 .back-to-top i {
@@ -297,12 +319,12 @@
 }
 
 .button:hover {
-  background-color: #0d9963;
+  background-color: #26D0CE;
   color: #fff;
 }
 
 .button-a {
-  background-color: #24b67e;
+  background-color: #26D0CE;
   color: #fff;
   border-color: #bbf5df;
 }
