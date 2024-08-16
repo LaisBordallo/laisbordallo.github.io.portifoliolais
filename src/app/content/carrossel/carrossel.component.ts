@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 
 // Interface para definir a estrutura do depoimento
@@ -16,7 +17,14 @@ interface Testimonial {
   standalone: true,
   imports: [CommonModule, CarouselModule],
   templateUrl: './carrossel.component.html',
-  styleUrls: ['./carrossel.component.scss']
+  styleUrls: ['./carrossel.component.scss'],
+  animations: [
+    trigger('autoHeight', [
+      state('collapsed', style({ height: '0px', overflow: 'hidden' })),
+      state('expanded', style({ height: '*', overflow: 'hidden' })),
+      transition('collapsed <=> expanded', animate('300ms ease-in-out'))
+    ])
+  ]
 })
 export class CarrosselComponent {
   // Array de depoimentos
