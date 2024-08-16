@@ -57,20 +57,22 @@ export class CarrosselComponent {
   customOptions: OwlOptions = {
     loop: true,
     margin: 10,
-    nav: false, 
-    dots: true, 
+    dots: false, 
     center: true,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     animateOut: 'fadeOut', // Animação ao sair
     animateIn: 'fadeIn', // Animação ao entrar
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    navSpeed: 1000, // Velocidade da navegação
+    navText: ['PREV', 'NEXT'],
+    nav: true,
     items: 1,
-    stagePadding: 50,
-    smartSpeed: 450, // Velocidade da animação
+    stagePadding: 15,
+    smartSpeed: 700, // Velocidade da animação
     slideTransition: 'linear', // Transição linear
 
     responsive: {

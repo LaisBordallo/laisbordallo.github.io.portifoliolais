@@ -163,6 +163,39 @@
 /* Animação do carrossel */
 .owl-carousel .owl-stage {
   transition: transform 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Animação de entrada aos itens */
+.owl-carousel .owl-item .fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Animação de saída aos itens */
+.owl-carousel .owl-item .fadeOut {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
 }
 
 @media (max-width: 767.98px) {

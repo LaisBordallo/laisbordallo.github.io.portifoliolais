@@ -110,6 +110,31 @@
 }
 
 /* Socials */
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.ico-circle {
+  background: #ffffff00;
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  display: inline-block;
+}
+
+.ico-circle i {
+  font-size: 20px;
+}
+
+
 .socials {
   padding: 1.5rem 0;
 }
@@ -163,6 +188,7 @@
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
 }
+
 
 /* Footer */
 .footer {

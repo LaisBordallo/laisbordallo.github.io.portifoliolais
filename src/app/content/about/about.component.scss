@@ -89,7 +89,6 @@
 }
 
 
-
 /* Estilo para o container da descrição */
 .description-container {
   display: block;
@@ -99,6 +98,18 @@
 }
 
 .description-container p {
-  font-size: 20px;
   color: #555;
+  font-size: responsive-font; /* Usa a variável de fonte responsiva */
+}
+
+.responsive-font {
+  font-size: 5rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem; /* Aumenta o tamanho em telas médias */
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 2rem; /* Aumenta ainda mais o tamanho em telas grandes */
+  }
 }
