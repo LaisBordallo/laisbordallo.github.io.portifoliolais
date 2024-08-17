@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "angular-cli-ghpages:deploy",
           "options": {
             "outputPath": "dist/portfoliolais",
             "index": "src/index.html",
